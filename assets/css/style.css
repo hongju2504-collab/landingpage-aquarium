@@ -1,0 +1,213 @@
+/* 기본 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none; color: inherit;
+}
+
+
+
+/* color */
+:root{
+    --OceanBlue: #0A4DA6;
+    --SoftWhiteBlue: #E0F2FE;
+    --SkyBlue: #4FC3F7;
+    --DeepOceanBlue: #0B3C5D;
+    --SlateGray: #4B5563;
+    --White: #ffffff;
+    --Black: #222222;
+}
+
+
+
+/* header */
+.header {
+    width: 100%;
+    height: 90px;
+    background-color: var(--White);
+    border-bottom: 1px solid #f0f0f0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.header .container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    /* 로고 - 메뉴 - 버튼을 양끝으로 배분 */
+    align-items: center;
+}
+
+/* GNB내비게이션 */
+.gnb ul {
+    display: flex;
+    gap: 60px;
+    /* 메뉴 사이의 넓은 간격 */
+}
+
+.gnb ul li a {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--DeepOceanBlue);
+    transition: color 0.3s;
+}
+
+.gnb ul li a:hover {
+    color: var(--SkyBlue);
+    /* 마우스 올렸을 때 포인트 컬러 */
+}
+
+/* 오른쪽 버튼 그룹 */
+.btn {
+    display: flex;
+    gap: 12px;
+}
+
+.btn a {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-group {
+    background-color: var(--OceanBlue);
+    color: var(--White);
+}
+
+.btn-group:hover {
+    background-color: var(--OceanBlue);
+    transform: translateY(-2px);
+    /* 살짝 떠오르는 효과 */
+}
+
+.btn-ticket {
+    border: 1.5px solid var(--OceanBlue);
+    color: var(--OceanBlue);
+}
+
+.btn-ticket:hover {
+    background-color: var(--OceanBlue);
+    color: var(--White);
+    transform: translateY(-2px);
+    /* 살짝 떠오르는 효과 */
+}
+
+
+
+/* KV section */
+.KV-sec {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* 화면 높이를 꽉 채움 */
+    display: flex;
+    align-items: center; /* 세로 중앙 정렬 */
+    overflow: hidden;
+    color: #fff;
+}
+
+/* 배경 이미지 처리 */
+.KV-sec > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 비율 유지하며 꽉 채움 */
+    z-index: 1;
+}
+
+.KV-sec::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.KV-sec .container {
+    position: relative;
+    z-index: 3; /* 이미지와 오버레이보다 위로 */
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 50px;
+    width: 100%;
+}
+
+/* txt */
+.KV-sec .text h2 {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.KV-sec .text h2 span {
+    display: block;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.KV-sec .text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--White);
+    margin-bottom: 40px;
+}
+
+/* button */
+.KV-sec .btn {
+    display: flex;
+    gap: 15px;
+}
+
+.KV-sec .btn a {
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.btn-reserv {
+    background-color: var(--OceanBlue);
+    color: var(--White);
+}
+
+.btn-info {
+    background-color: var(--White);
+    color: var(--OceanBlue);
+}
+
+.btn-info span {
+    margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+/* hover */
+.btn-info:hover span { transform: translateX(5px); }
