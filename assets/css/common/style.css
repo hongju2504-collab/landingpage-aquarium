@@ -84,10 +84,12 @@ a {
 .btn a {
     display: inline-block;
     padding: 12px 24px;
-    border-radius: 12px;
     font-size: 16px;
     font-weight: 600;
     transition: all 0.3s ease;
+}
+.btn-group, .btn-ticket{
+    border-radius: 12px;
 }
 
 .btn-group {
@@ -152,7 +154,6 @@ a {
     z-index: 3; /* 이미지와 오버레이보다 위로 */
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 50px;
     width: 100%;
 }
 
@@ -210,4 +211,90 @@ a {
 }
 
 /* hover */
-.btn-info:hover span { transform: translateX(5px); }
+.btn-reserv:hover{
+    background-color: #083d7a;
+}
+.btn-info:hover{
+    background-color: #c9c9c9;
+}
+.btn-info:hover span {
+    transform: translateX(5px);
+}
+
+
+
+/* program section */
+.program-sec {
+    padding: 200px 0;
+    background-color: #fff;
+}
+
+.program-sec .container {
+    max-width: 100%;
+    margin: 0 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px; 
+}
+
+
+.program-item {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 134px;
+}
+
+
+.reverse {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+
+.program-item .img-box {
+    width: 810px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.program-item .img-box img {
+    width: 810px;
+    height: 400px;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.program-item:hover .img-box img {
+    transform: scale(1.05);
+}
+
+
+.program-item .text-box h3 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.program-item .text-box p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.program-item .btn-reserv {
+    display: inline-block;
+    padding: 12px 40px;
+    background-color: var(--OceanBlue);
+    color: var(--White);
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.program-item .btn-reserv:hover {
+    background-color: #083d7a;
+}

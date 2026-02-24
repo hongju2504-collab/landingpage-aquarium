@@ -22,11 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
             this.style.color = '#4FC3F7';
         });
     });
-});
 
-
-// KV section
-document.addEventListener('DOMContentLoaded', () => {
+    // KV section
     const kvText = document.querySelector('.KV-sec .text');
     const kvBtn = document.querySelector('.KV-sec .btn');
 
@@ -42,9 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
         kvText.style.opacity = '1';
         kvText.style.transform = 'translateY(0)';
     }, 500);
-
     setTimeout(() => {
         kvBtn.style.opacity = '1';
         kvBtn.style.transform = 'translateY(0)';
-    }, 800);
+    }, 500);
 });
