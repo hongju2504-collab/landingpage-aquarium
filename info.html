@@ -1,34 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>후기</title>
-
-    <link rel="stylesheet" href="./assets/css/reset/reset.min.css">
-    <link rel="stylesheet" href="./assets/css/common/style.css">
+    <title>체험형 아쿠아리움</title>
+    <link rel="stylesheet" href="./assets/css/reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./01.css">
+    <link rel="stylesheet" href="./assets/css/info.css">
 </head>
+
 <body>
-    <header class="header">
-        <div class="container">
-            <a href="/">
-                <img src="./assets/images/logo.png" alt="로고">
-            </a>
+
+    <header id="header">
+        <div class="inner">
+            <h1 class="logo"><a href="/index.html">AQUARIUM</a></h1>
             <nav class="gnb">
                 <ul>
-                    <li><a href="/program.html">체험 프로그램</a></li>
-                    <li><a href="/theme.html">전시 안내</a></li>
-                    <li><a href="/info.html">안내사항</a></li>
-                    <li><a href="/review.html">후기</a></li>
+                    <li><a href="/info.html">이용안내</a></li>
+                    <li><a href="/program.html">프로그램</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">커뮤니티</a></li>
                 </ul>
             </nav>
-            <div class="btn">
-                <a href="#" class="btn-group">단체 예약하기</a>
-                <a href="#" class="btn-ticket">티켓 구매하기</a>
-            </div>
+            <button class="m-menu-btn"><span></span></button>
         </div>
     </header>
-    
-    <h2>후기</h2>
+
+    <section class="kv">
+        <div class="video-wrap">
+            <video autoplay muted loop playsinline>
+                <source src="./assets/images/videos/129597-744688811_medium.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="txt-box">
+            <h2>보고, 만지고, 배우는 바다</h2>
+            <p>가족 모두가 함께하는 체험형 아쿠아리움</p>
+            <div class="btn-group">
+                <button class="btn-reserve" onclick="openModal()">예약하기</button>
+                <button class="btn-more">자세히보기</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec02">
+        <div class="swiper autoSlider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/info_bg01.png" alt="물빛 시작관"></div>
+                <div class="swiper-slide"><img src="./img/info_bg02.png" alt="푸른 흐름관"></div>
+                <div class="swiper-slide"><img src="./img/info_bg03.png" alt="심해 탐험관"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec03">
+        <h3>고객님의 따뜻한 말씀</h3>
+        <div class="swiper reviewSlider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide card">카드 1...</div>
+                <div class="swiper-slide card">카드 2...</div>
+                <div class="swiper-slide card">카드 3...</div>
+                <div class="swiper-slide card">카드 3...</div>
+                <div class="swiper-slide card">카드 3...</div>
+                <div class="swiper-slide card">카드 3...</div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal" class="modal-overlay">
+        <div class="modal-content">
+            <h3>티켓 예매</h3>
+            <p>예매 시스템 준비 중입니다.</p>
+            <button onclick="closeModal()">닫기</button>
+        </div>
+    </div>
+
+    <script src="./assets/js/jquery-1.12.3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="./assets/js/script.js"></script> -->
+    <script src="./01.js"></script>
+    <script src="./assets/js/info.js"></script>
 </body>
+
 </html>

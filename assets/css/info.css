@@ -1,0 +1,125 @@
+/* 기본 설정 */
+:root {
+    --main-blue: #0055b8;
+    --margin-side: 102px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+}
+
+.inner {
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 0 var(--margin-side);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+/* KV */
+.kv {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.kv .video-wrap video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kv .txt-box {
+    position: absolute;
+    top: 50%;
+    left: var(--margin-side);
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+/* Modal */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2000;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1680px) {
+    :root {
+        --margin-side: 80px;
+    }
+}
+
+@media (max-width: 1280px) {
+    :root {
+        --margin-side: 60px;
+    }
+}
+
+@media (max-width: 1024px) {
+    :root {
+        --margin-side: 40px;
+    }
+
+    .gnb {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .m-menu-btn {
+        display: block;
+        width: 30px;
+        height: 20px;
+        position: relative;
+    }
+
+    /* 햄버거 메뉴 구현 */
+    .txt-box h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 540px) {
+    :root {
+        --margin-side: 20px;
+    }
+}
+
+@media (max-width: 414px) {
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

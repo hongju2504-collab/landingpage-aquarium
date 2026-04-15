@@ -1,34 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>체험 프로그램</title>
-
-    <link rel="stylesheet" href="./assets/css/reset/reset.min.css">
-    <link rel="stylesheet" href="./assets/css/common/style.css">
+    <title>체험 프로그램 - 아쿠아리움</title>
+    <link rel="stylesheet" href="./assets/css/reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./01.css">
+    <link rel="stylesheet" href="./assets/css/program.css">
 </head>
+
 <body>
-    <header class="header">
-        <div class="container">
-            <a href="/">
-                <img src="./assets/images/logo.png" alt="로고">
-            </a>
+    <header id="header">
+        <div class="inner">
+            <h1 class="logo"><a href="/index.html">AQUARIUM</a></h1>
             <nav class="gnb">
                 <ul>
-                    <li><a href="/program.html">체험 프로그램</a></li>
-                    <li><a href="/theme.html">전시 안내</a></li>
-                    <li><a href="/info.html">안내사항</a></li>
-                    <li><a href="/review.html">후기</a></li>
+                    <li><a href="/info.html">이용안내</a></li>
+                    <li><a href="/program.html">프로그램</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">커뮤니티</a></li>
                 </ul>
             </nav>
-            <div class="btn">
-                <a href="#" class="btn-group">단체 예약하기</a>
-                <a href="#" class="btn-ticket">티켓 구매하기</a>
-            </div>
+            <button class="m-menu-btn"><span></span></button>
         </div>
     </header>
 
-    <h2>체험 프로그램</h2>
+    <main class="sub-page">
+        <section class="sub-title-area">
+            <div class="inner">
+                <h2>체험 프로그램</h2>
+                <p>생생하게 기억에 남을 진짜 경험</p>
+            </div>
+        </section>
+
+        <nav class="tab-menu">
+            <div class="inner">
+                <ul>
+                    <li class="active" data-tab="tab1">먹이주기 체험</li>
+                    <li data-tab="tab2">해양생물 만나기</li>
+                    <li data-tab="tab3">키즈 체험 교실</li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="tab-container" class="inner">
+
+            <article id="tab1" class="tab-content active">
+                <div class="program-hero" style="background-image: url('./img/tab-img01.png');">
+                    <div class="hero-txt">
+                        <h3>먹이주기 체험</h3>
+                        <p>직접 먹이를 주며, 바다 생명과 가장 가까워지는 순간</p>
+                    </div>
+                </div>
+
+                <div class="program-summary">
+                    <div class="sum-item"><i>👤</i><strong>참여인원</strong>
+                        <p>최대 12인</p>
+                    </div>
+                    <div class="sum-item"><i>⏱️</i><strong>소요시간</strong>
+                        <p>40분~50분</p>
+                    </div>
+                    <div class="sum-item"><i>🕒</i><strong>운영시간</strong>
+                        <p>오전 9시 ~ 오후 3시</p>
+                    </div>
+                </div>
+
+                <div class="detail-section row1">
+                    <div class="txt">
+                        <h4>먹이주기 체험</h4>
+                        <p>전문 사육사의 안내에 따라 해양 생물의 식사 준비부터 먹이를 주는 순간까지 함께합니다. 바다 생명과 교감하는 이 시간은 아이에게는 잊지 못할 경험이 되고, 부모에게는
+                            교육과 재미를 함께 전하는 기회입니다.</p>
+                        <p> 체험은 안전을 고려한 환경에서 소규모로 진행되어, 아이 한 명 한 명이 충분히 집중하며 참여할 수 있습니다. 전문가의 설명과 질문을 나누는 시간을 통해, 관람으로는 알기 어려웠던 바다 생물의 이야기가 오래 기억에 남습니다.</p>
+                    </div>
+                    <div class="img"><img src="./img/tab_food-info1.png" alt=""></div>
+                </div>
+
+                <div class="detail-section row2">
+                    <div class="img"><img src="./img/tab_food-info2.png" alt=""></div>
+                    <div class="txt">
+                        <h4>먹이주기 체험 상세</h4>
+                        <ul class="info-list">
+                            <li><strong>요금</strong> 8,000원 (단독 체험 활동 이용 시) / 32,000원 (전체 체험활동 이용 가능)</li>
+                            <li><strong>진행요원</strong> 전문 아쿠아리스트 2인</li>
+                            <li><strong>운영시간</strong> 09:00~15:50 홀수 시간마다 진행 (9시, 11시, 13시, 15시)</li>
+                            <li><strong>예약방법</strong> 온라인 예약 (체험 시작 최소 1시간 전 예약 필수)</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article id="tab2" class="tab-content">
+                <div class="program-hero" style="background-image: url('./img/tab-img02.png');">
+                    <div class="hero-txt">
+                        <h3>해양생물 만나기</h3>
+                        <p>유리 너머가 아닌, 같은 공간에서 만나는 특별한 만남</p>
+                    </div>
+                </div>
+                <div class="program-summary">
+                    <div class="sum-item"><i>👤</i><strong>참여인원</strong>
+                        <p>최대 12인</p>
+                    </div>
+                    <div class="sum-item"><i>⏱️</i><strong>소요시간</strong>
+                        <p>40분~50분</p>
+                    </div>
+                    <div class="sum-item"><i>🕒</i><strong>운영시간</strong>
+                        <p>오전 9시 ~ 오후 3시</p>
+                    </div>
+                </div>
+                <div class="detail-section row1">
+                    <div class="txt">
+                        <h4>해양생물 만나기</h4>
+                        <p> 유리 너머가 아닌 같은 공간에서 해양 생물을 마주하는 특별한 시간입니다. 전문 스태프의 설명과 함께 생물의 생김새, 움직임, 생활 방식을 가까이에서 관찰하며 질문도
+                            자유롭게 나눌 수 있습니다. 아이의 “왜?”가 자연스럽게 이어지고, 바다 생명에 대한 존중과 이해가 깊어집니다.</p>
+                        <p> 체험은 아이의 안전을 최우선으로 고려한 환경에서 진행되며, 처음 만나는 생물에도 부담 없이 다가갈 수 있도록 차분한 분위기로 운영됩니다. 짧은 만남이지만, 아이의 기억 속에는 오래 남는 특별한 경험으로 자리합니다.</p>
+                    </div>
+                    <div class="img"><img src="./img/tab_manna-info1.png" alt=""></div>
+                </div>
+
+                <div class="detail-section row2">
+                    <div class="img"><img src="./img/tab_manna-info2.png" alt=""></div>
+                    <div class="txt">
+                        <h4>해양생물 만나기 상세</h4>
+                        <ul class="info-list">
+                            <li><strong>요금</strong> 12,000원 (단독 체험활동 이용 시) / 32,000원 (전체 체험활동 이용 가능)</li>
+                            <li><strong>진행요원</strong> 전문 아쿠아리스트 2인, 강사 1인</li>
+                            <li><strong>운영시간</strong> 10:00~14:50 짝수 시간마다 진행(10시, 12시, 14시)</li>
+                            <li><strong>예약방법</strong> 온라인 예약 (체험 시작 최소 1시간 전 예약 필수)</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article id="tab3" class="tab-content">
+                <div class="program-hero" style="background-image: url('./img/tab-img03.png');">
+                    <div class="hero-txt">
+                        <h3>키즈 체험 교실</h3>
+                        <p>놀이처럼 즐기며 바다를 배우는 아이만의 시간</p>
+                    </div>
+                </div>
+                <div class="program-summary">
+                    <div class="sum-item"><i>👤</i><strong>참여인원</strong>
+                        <p>최대 12인</p>
+                    </div>
+                    <div class="sum-item"><i>⏱️</i><strong>소요시간</strong>
+                        <p>2시간</p>
+                    </div>
+                    <div class="sum-item"><i>🕒</i><strong>운영시간</strong>
+                        <p>오전 9시 ~ 오후 3시</p>
+                    </div>
+                </div>
+
+                <div class="detail-section row1">
+                    <div class="txt">
+                        <h4>키즈 체험 교실</h4>
+                        <p> 연령별 눈높이에 맞춘 활동으로 구성된 체험형 교육 프로그램입니다. 만들기, 관찰, 이야기 활동을 통해 바다 생물을 쉽고 재미있게 이해하며, 놀이 속에서 자연스럽게
+                            배움이 이어집니다. 정해진 시간 동안 진행되어 관람 중 잠시 쉬어가며 참여하기에도 적합합니다.</p>
+                        <p> 전문 강사의 안내로 아이의 호기심을 이끌어내며, 활동에 집중할 수 있도록 소규모로 운영됩니다. 체험이 끝난 후에도 아이 스스로 바다에 대해 이야기하고 기억할 수 있는 시간이 됩니다.</p>
+                    </div>
+                    <div class="img"><img src="./img/tab_school-info1.png" alt=""></div>
+                </div>
+
+                <div class="detail-section row2">
+                    <div class="img"><img src="./img/tab_school-info2.png" alt=""></div>
+                    <div class="txt">
+                        <h4>키즈 체험 교실 상세</h4>
+                        <ul class="info-list">
+                            <li><strong>요금</strong> 18,000원 (단독 체험활동 이용 시) / 32,000원 (전체 체험활동 이용 가능)</li>
+                            <li><strong>진행요원</strong> 전문 아쿠아리스트 1인, 강사 2인</li>
+                            <li><strong>운영시간</strong> 09:00~15:50 정시마다 진행(9시, 10시, 11시, 12시, 13시, 14시, 15시)</li>
+                            <li><strong>예약방법</strong> 온라인 예약 (체험 시작 최소 1시간 전 예약 필수)</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <div class="cta-area">
+                <button class="btn-reserve-large">예약하기</button>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/jquery-1.12.3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="./assets/js/script.js"></script> -->
+    <script src="./01.js"></script>
+    <script src="./assets/js/program.js"></script>
 </body>
+
 </html>
